@@ -13,3 +13,4 @@ jobs:
 
     - run: |
         az account show
+        az storage blob upload-batch -s public -d \$web --account-name afika --content-type 'text/html; charset=utf-8'
