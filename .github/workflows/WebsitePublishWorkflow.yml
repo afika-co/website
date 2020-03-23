@@ -1,4 +1,4 @@
-name: Azure Login sample workflow
+name: Publish Afika Website
 
 on: [push]
 
@@ -14,5 +14,4 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - run: |
-        az account show
         az storage blob upload-batch -s public -d \$web --account-name afika --content-type 'text/html; charset=utf-8'
