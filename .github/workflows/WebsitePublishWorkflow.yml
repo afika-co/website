@@ -1,6 +1,9 @@
 name: Publish Afika Website
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   publish-website:
