@@ -17,6 +17,7 @@ jobs:
         node-version: '11.x'
 
     - run: |
+        npm install
         npm run deploy
         npm run prepare-public
 
