@@ -28,6 +28,11 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
+/* 
+Change the default color palette to be something not
+too far remove from the South African flag.
+*/
+
 $black: #000000;
 $yellow: #ffb612;
 $green: #007a40;
@@ -40,4 +45,9 @@ $primary: $green;
 $danger: $red;
 $info: $blue;
 
+/* Change the tabs color scheme to have a ``dark mode''. */
+// @import "../node_modules/bulma/sass/components/tabs";
+// $tabs-link-hover-border-bottom-color: white;
+
+/* Finalize the bulma setup */
 @import "../node_modules/bulma/bulma";
