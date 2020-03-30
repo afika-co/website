@@ -26,4 +26,18 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$black: #000000;
+$yellow: #ffb612;
+$green: #007a40;
+$red: #de3831;
+$blue: #002395;
+
+$dark: $black;
+$warning: $yellow;
+$primary: $green;
+$danger: $red;
+$info: $blue;
+
 @import "../node_modules/bulma/bulma";
