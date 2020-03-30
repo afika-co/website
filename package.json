@@ -30,7 +30,7 @@
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
-    "prepare-public": "mkdir -p public && cp index.html public && cp -r css public && cp -r lib public",
+    "prepare-public": "mkdir -p public && cp *.html public && cp -r css public && cp -r lib public",
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
